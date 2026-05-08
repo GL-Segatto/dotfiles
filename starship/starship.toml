@@ -110,62 +110,62 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+style = "bg:my_pink"
+format = '[[ $symbol $branch ](fg:my_black bg:my_pink)]($style)'
 
 [git_status]
-style = "bg:color_aqua"
-format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
+style = "bg:my_pink"
+format = '[[($all_status$ahead_behind )](fg:my_black bg:my_pink)]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [bun]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [c]
 symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [cpp]
 symbol = " "
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [rust]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_blakc bg:my_purple)]($style)'
 
 [golang]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [php]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [java]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [kotlin]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [haskell]
 symbol = ""
-style = "bg:color_blue"
-format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](fg:my_black bg:my_purple)]($style)'
 
 [python]
 symbol = ""
