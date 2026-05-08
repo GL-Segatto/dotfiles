@@ -1,0 +1,204 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](my_green)\
+$os\
+$username\
+[](bg:my_red fg:my_green)\
+$directory\
+[](fg:my_red bg:my_pink)\
+$git_branch\
+$git_status\
+[](fg:my_pink bg:my_purple)\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$bun\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:my_purple bg:my_yellow)\
+$docker_context\
+$conda\
+$pixi\
+[](fg:my_yellow bg:my_blue)\
+$time\
+  [ ](fg:my_blue)\
+$line_break$character"""
+
+palette = 'gruvbox_dark'
+
+[palettes.gruvbox_dark]
+color_fg0 = '#fbf1c7'
+color_bg1 = '#3c3836'
+color_bg3 = '#665c54'
+color_blue = '#458588'
+color_aqua = '#689d6a'
+color_green = '#98971a'
+color_orange = '#d65d0e'
+color_purple = '#b16286'
+color_red = '#cc241d'
+color_yellow = '#d79921'
+
+my_bg = '#0B0B12'
+my_alt_bg = '#0F111A'
+my_bg_dark = '#08090F'
+my_fg = '#E6E9EF'
+my_white = '#FFFFFF'
+my_gray = '#7A819D'
+my_dark_gray = '#3B3F51'
+my_red = '#FF5F87'
+my_green = '#5FFF87'
+my_blue = '#5FAFFF'
+my_yellow = '#FFD75F'
+my_orange = '#FFAF5F'
+my_purple = '#AF87FF'
+my_cyan = '#5FFFFF'
+my_pink = '#FF87AF'
+my_black = '#000000'
+
+[os]
+disabled = false
+style = "bg:my_green bold fg:my_black"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[username]
+show_always = true
+style_user = "bg:my_green bold fg:my_black"
+style_root = "bg:color_orange fg:color_fg0"
+format = '[ $user ]($style)'
+
+[directory]
+style = "bold fg:my_black bg:my_red"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color_aqua"
+format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+
+[git_status]
+style = "bg:color_aqua"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[bun]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[cpp]
+symbol = " "
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[java]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
+
+[python]
+symbol = ""
+style = "bg:my_purple"
+format = '[[ $symbol( $version) ](bold fg:my_black bg:my_purple)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+
+[conda]
+style = "bg:color_bg3"
+format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
+
+[pixi]
+style = "bg:color_bg3"
+format = '[[ $symbol( $version)( $environment) ](fg:color_fg0 bg:color_bg3)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_bg1"
+format = '[[  $time ](bold fg:my_black bg:my_blue)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[ ⮑](bold fg:my_green)'
+error_symbol = '[ ⮑](bold fg:my_red)'
+vimcmd_symbol = '[ ⮐](bold fg:my_green)'
+vimcmd_replace_one_symbol = '[ ⮐](bold fg:my_purple)'
+vimcmd_replace_symbol = '[ ⮐](bold fg:my_purple)'
+vimcmd_visual_symbol = '[ ⮐](bold fg:my_yellow)'
