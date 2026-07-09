@@ -1,0 +1,98 @@
+@import 'colors/everforest.css';
+
+* {
+  border: none;
+  border-radius: 0px;
+  
+  font-family: "RobotoMono Nerd Font", sans-serif;
+  font-weight: bold;
+
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  background: @black;
+  border: 1px solid @green;
+}
+
+tooltip {
+  background: @background;
+  border: 1px solid;
+  border-radius: 0px;
+}
+
+tooltip label {
+  color: @green; 
+  padding: 600px;
+}
+
+#workspaces {
+  background-color: transparent;
+  padding: 1px 1px;
+  margin: 2px 0px 2px 2px;
+  border: 0px solid @active;
+  min-width: 50px;
+}
+
+#workspaces button {
+  color: @active;
+  padding: 1px 2px;
+  margin: 0px 2px;
+  color: @inactive;
+  background-color: @background;
+  border: 1px solid @green;
+  transition: all 0.3s ease-in-out;
+  min-width: 50px;
+}
+
+#workspaces button.active {
+  background-color: @green;
+  color: @background;
+  transition: all 0.3s ease-in-out;
+  min-width: 50px;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+  color: @black;
+  min-width: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+  background-color: @active;
+  color: @black;
+  min-width: 50px;
+  background-size: 400% 400%;
+}
+
+#pulseaudio,
+#network,
+#clock,
+#custom-notification {
+  background-color: transparent;
+  padding: 0 3px 0 3px;
+  margin: 0 0 0 12px;
+}
+
+#pulseaudio {
+  color: @magenta;
+  padding-left: 10px;
+  border-left: 1px solid @green;
+}
+
+#network {
+  color: @blue;
+}
+
+#clock {
+  color: @green;
+}
+
+#custom-notification {
+  color: @yellow;
+  margin: 0 12px 0 12px;;
+}
+
