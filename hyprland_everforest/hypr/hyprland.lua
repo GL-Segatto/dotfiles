@@ -52,12 +52,14 @@ local menu = "rofi -show drun"
 --   hl.exec_cmd("waybar & hyprpaper & firefox")
 -- end)
 
---Iniciar o waybar
+-- Coisas que iniciam automaticamente no inicio do Hyprland
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar")
 	hl.exec_cmd("swaync")
-	hl.exec_cmd("hyprpaper")
-	--adicione aqui mais programas para inciar
+	hl.exec_cmd("awww-daemon")
+	-- Imagem configurada para o daemon
+	hl.exec_cmd("awww img ~/Imagens/13977432.jpg")
+	-- Adicione aqui mais programas para inciar
 end)
 
 -------------------------------
