@@ -1,15 +1,84 @@
--- Cores Everforest
+-------------
+--- Cores ---
+-------------
+local colors = {
+	-- Background
+	bg_dim = "#1E2326",
 
--- This is an example Hyprland Lua config file.
--- Refer to the wiki for more information.
+	bg0 = "#272E33",
+	bg1 = "#2E383C",
+	bg2 = "#374145",
+	bg3 = "#414B50",
+	bg4 = "#495156",
+	bg5 = "#4F5B58",
+
+	-- Background variants
+	bg_red = "#493B40",
+	bg_yellow = "#45443C",
+	bg_green = "#3C4841",
+	bg_blue = "#384B55",
+	bg_purple = "#463F48",
+	bg_visual = "#4C3743",
+
+	-- Foreground
+	fg = "#D3C6AA",
+
+	-- Colors
+	red = "#E67E80",
+	yellow = "#DBBC7F",
+	green = "#A7C080",
+	blue = "#7FBBB3",
+	purple = "#D699B6",
+	aqua = "#83C092",
+	orange = "#E69875",
+
+	-- Greys
+	grey0 = "#7A8478",
+	grey1 = "#859289",
+	grey2 = "#9DA9A0",
+
+	-- Statusline
+	statusline1 = "#A7C080",
+	statusline2 = "#D3C6AA",
+	statusline3 = "#E67E80",
+
+	-- Alpha colors (70%)
+	bg_dim_alpha = "rgba(30,35,38,0.7)",
+
+	bg0_alpha = "rgba(39,46,51,0.7)",
+	bg1_alpha = "rgba(46,56,60,0.7)",
+	bg2_alpha = "rgba(55,65,69,0.7)",
+	bg3_alpha = "rgba(65,75,80,0.7)",
+	bg4_alpha = "rgba(73,81,86,0.7)",
+	bg5_alpha = "rgba(79,91,88,0.7)",
+
+	bg_red_alpha = "rgba(73,59,64,0.7)",
+	bg_yellow_alpha = "rgba(69,68,60,0.7)",
+	bg_green_alpha = "rgba(60,72,65,0.7)",
+	bg_blue_alpha = "rgba(56,75,85,0.7)",
+	bg_purple_alpha = "rgba(70,63,72,0.7)",
+	bg_visual_alpha = "rgba(76,55,67,0.7)",
+
+	fg_alpha = "rgba(211,198,170,0.7)",
+
+	red_alpha = "rgba(230,126,128,0.7)",
+	yellow_alpha = "rgba(219,188,127,0.7)",
+	green_alpha = "rgba(167,192,128,0.7)",
+	blue_alpha = "rgba(127,187,179,0.7)",
+	purple_alpha = "rgba(214,153,182,0.7)",
+	aqua_alpha = "rgba(131,192,146,0.7)",
+	orange_alpha = "rgba(230,152,117,0.7)",
+
+	grey0_alpha = "rgba(122,132,120,0.7)",
+	grey1_alpha = "rgba(133,146,137,0.7)",
+	grey2_alpha = "rgba(157,169,160,0.7)",
+
+	statusline1_alpha = "rgba(167,192,128,0.7)",
+	statusline2_alpha = "rgba(211,198,170,0.7)",
+	statusline3_alpha = "rgba(230,126,128,0.7)",
+}
+
 -- https://wiki.hypr.land/Configuring/Start/
-
--- Please note not all available settings / options are set here.
--- For a full list, see the wiki
-
--- You can (and should!!) split this configuration into multiple files
--- Create your files separately and then require them like this:
--- require("myColors")
 
 ------------------
 ---- MONITORS ----
@@ -97,8 +166,8 @@ hl.config({
 		border_size = 1,
 
 		col = {
-			active_border = { colors = { "rgba(87c095aa)", "rgba(00ff99ee)" }, angle = 45 },
-			inactive_border = "rgba(83b6afaa)",
+			active_border = colors.green,
+			inactive_border = colors.bg_green,
 		},
 
 		-- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -122,7 +191,7 @@ hl.config({
 			enabled = true,
 			range = 10,
 			render_power = 3,
-			color = 0xee1a1a1a,
+			color = colors.bg_dim,
 		},
 
 		blur = {
