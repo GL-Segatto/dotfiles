@@ -1,12 +1,3 @@
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Rofi Theme File
- * Rofi Version: 1.7.3
- **/
-
 /*****----- Configuration -----*****/
 configuration {
 	modi:                       "drun";
@@ -24,12 +15,12 @@ configuration {
 @import                          "shared/fonts.rasi"
 
 * {
-    border-colour:               var(selected);
-    handle-colour:               var(selected);
-    background-colour:           var(background);
-    foreground-colour:           var(foreground);
-    alternate-background:        var(background-alt);
-    normal-background:           var(background);
+    border-colour:               var(green);
+    handle-colour:               var(bg0);
+    background-colour:           var(bg0);
+    foreground-colour:           var(grey2);
+    alternate-background:        var(bg1);
+    normal-background:           var(bg0);
     normal-foreground:           var(foreground);
     urgent-background:           var(urgent);
     urgent-foreground:           var(background);
@@ -90,7 +81,7 @@ inputbar {
     enabled:                     true;
     spacing:                     0px 0px 0px 10px;
     margin:                      0px;
-    padding:                     3px 3px -10px 3px;
+    padding:                     3px 3px -10px 5px;
     border:                      0px solid;
     border-radius:               0px;
     border-color:                @border-colour;
