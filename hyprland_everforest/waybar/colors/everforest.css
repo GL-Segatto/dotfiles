@@ -1,23 +1,69 @@
-/* Everforest Dark Medium */
+/* Everforest Palette */
 
-@define-color background      #2D353B;
-@define-color background-alt  #343F44;
-@define-color foreground      #D3C6AA;
+@define-color bg_dim       #1E2326;
 
-@define-color black           #232A2E;
-@define-color red             #E67E80;
-@define-color green           #A7C080;
-@define-color yellow          #DBBC7F;
-@define-color blue            #7FBBB3;
-@define-color magenta         #D699B6;
-@define-color cyan            #83C092;
-@define-color white           #D3C6AA;
+@define-color bg0          #272E33;
+@define-color bg1          #2E383C;
+@define-color bg2          #374145;
+@define-color bg3          #414B50;
+@define-color bg4          #495156;
+@define-color bg5          #4F5B58;
 
-@define-color grey            #859289;
-@define-color border          #475258;
+@define-color bg_red       #493B40;
+@define-color bg_yellow    #45443C;
+@define-color bg_green     #3C4841;
+@define-color bg_blue      #384B55;
+@define-color bg_purple    #463F48;
+@define-color bg_visual    #4C3743;
 
-@define-color active          @green;
-@define-color inactive        @grey;
-@define-color warning         @yellow;
-@define-color critical        @red;
-@define-color accent          @blue;
+@define-color fg           #D3C6AA;
+
+@define-color red          #E67E80;
+@define-color yellow       #DBBC7F;
+@define-color green        #A7C080;
+@define-color blue         #7FBBB3;
+@define-color purple       #D699B6;
+@define-color aqua         #83C092;
+@define-color orange       #E69875;
+
+@define-color grey0        #7A8478;
+@define-color grey1        #859289;
+@define-color grey2        #9DA9A0;
+
+@define-color statusline1  #A7C080;
+@define-color statusline2  #D3C6AA;
+@define-color statusline3  #E67E80;
+
+@define-color bg_dim_alpha       rgba(30, 35, 38, 0.9);
+
+@define-color bg0_alpha          rgba(39, 46, 51, 0.9);
+@define-color bg1_alpha          rgba(46, 56, 60, 0.9);
+@define-color bg2_alpha          rgba(55, 65, 69, 0.9);
+@define-color bg3_alpha          rgba(65, 75, 80, 0.9);
+@define-color bg4_alpha          rgba(73, 81, 86, 0.9);
+@define-color bg5_alpha          rgba(79, 91, 88, 0.9);
+
+@define-color bg_red_alpha       rgba(73, 59, 64, 0.9);
+@define-color bg_yellow_alpha    rgba(69, 68, 60, 0.9);
+@define-color bg_green_alpha     rgba(60, 72, 65, 0.9);
+@define-color bg_blue_alpha      rgba(56, 75, 85, 0.9);
+@define-color bg_purple_alpha    rgba(70, 63, 72, 0.9);
+@define-color bg_visual_alpha    rgba(76, 55, 67, 0.9);
+
+@define-color fg_alpha           rgba(211, 198, 170, 0.9);
+
+@define-color red_alpha          rgba(230, 126, 128, 0.9);
+@define-color yellow_alpha       rgba(219, 188, 127, 0.9);
+@define-color green_alpha        rgba(167, 192, 128, 0.9);
+@define-color blue_alpha         rgba(127, 187, 179, 0.9);
+@define-color purple_alpha       rgba(214, 153, 182, 0.9);
+@define-color aqua_alpha         rgba(131, 192, 146, 0.9);
+@define-color orange_alpha       rgba(230, 152, 117, 0.9);
+
+@define-color grey0_alpha        rgba(122, 132, 120, 0.9);
+@define-color grey1_alpha        rgba(133, 146, 137, 0.9);
+@define-color grey2_alpha        rgba(157, 169, 160, 0.9);
+
+@define-color statusline1_alpha  rgba(167, 192, 128, 0.9);
+@define-color statusline2_alpha  rgba(211, 198, 170, 0.9);
+@define-color statusline3_alpha  rgba(230, 126, 128, 0.9);

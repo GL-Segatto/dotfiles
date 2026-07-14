@@ -1,98 +1,85 @@
-@import 'colors/everforest.css';
+@import "colors/everforest.css";
 
 * {
-  border: none;
-  border-radius: 0px;
-  
-  font-family: "RobotoMono Nerd Font", sans-serif;
-  font-weight: bold;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    min-height: 0;
 
-  min-height: 0;
-  padding: 0;
-  margin: 0;
+    font-family: "RobotoMono Nerd Font", sans-serif;
+    font-weight: bold;
 }
 
 window#waybar {
-  background: @black;
-  border: 1px solid @green;
+    background: @bg1_alpha;
+    border: 0px solid @green;
 }
 
 tooltip {
-  background: @background;
-  border: 1px solid;
-  border-radius: 0px;
+    background: @background;
+    border: 1px solid;
 }
 
 tooltip label {
-  color: @green; 
-  padding: 600px;
+    color: @green;
+    padding: 6px;
 }
 
+/* Workspaces */
+
 #workspaces {
-  background-color: transparent;
-  padding: 1px 1px;
-  margin: 2px 0px 2px 2px;
-  border: 0px solid @active;
-  min-width: 50px;
+    margin: 2px 0 2px 2px;
+    padding: 1px;
+    min-width: 50px;
 }
 
 #workspaces button {
-  color: @active;
-  padding: 1px 2px;
-  margin: 0px 2px;
-  color: @inactive;
-  background-color: @background;
-  border: 1px solid @green;
-  transition: all 0.3s ease-in-out;
-  min-width: 50px;
+    min-width: 50px;
+    margin: 0 2px;
+    padding: 0px 2px;
+
+    background: @background;
+    color: @green;
+    border: 1px solid @green;
+
+    transition: .3s ease;
 }
 
 #workspaces button.active {
-  background-color: @green;
-  color: @background;
-  transition: all 0.3s ease-in-out;
-  min-width: 50px;
-}
-
-#workspaces button.urgent {
-  background-color: @red;
-  color: @black;
-  min-width: 50px;
-  transition: all 0.3s ease-in-out;
+    background: @green;
+    color: @bg1_alpha;
 }
 
 #workspaces button:hover {
-  background-color: @active;
-  color: @black;
-  min-width: 50px;
-  background-size: 400% 400%;
+    background: @active;
+    color: @black;
 }
+
+#workspaces button.urgent {
+    background: @red;
+    color: @black;
+}
+
+/* Modules */
 
 #pulseaudio,
 #network,
 #clock,
 #custom-notification {
-  background-color: transparent;
-  padding: 0 3px 0 3px;
-  margin: 0 0 0 12px;
+    margin-left: 12px;
+    padding: 0;
 }
 
 #pulseaudio {
-  color: @magenta;
-  padding-left: 10px;
-  border-left: 1px solid @green;
+    color: @green;
+    padding-left: 10px;
 }
 
-#network {
-  color: @blue;
-}
-
-#clock {
-  color: @green;
-}
+#network { color: @grey0; }
+#clock { color: @green; }
 
 #custom-notification {
-  color: @yellow;
-  margin: 0 12px 0 12px;;
+    color: @grey0;
+    margin: 0 12px;
 }
-
