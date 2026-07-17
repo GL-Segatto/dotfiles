@@ -123,7 +123,8 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("awww-daemon")
 	-- Imagem configurada para o daemon
 	hl.exec_cmd("awww img ~/.config/awww-daemon/wallpapers/everforest.jpg")
-	-- Adicione aqui mais programas para inciar
+	-- Reiniciar portal para o RustDesk
+	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 end)
 
 -------------------------------
@@ -135,6 +136,11 @@ end)
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
+-- RustDesk
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
@@ -143,14 +149,14 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- Please note permission changes here require a Hyprland restart and are not applied on-the-fly
 -- for security reasons
 
--- hl.config({
---   ecosystem = {
---     enforce_permissions = true,
---   },
--- })
+hl.config({
+	ecosystem = {
+		enforce_permissions = true,
+	},
+})
 
--- hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
--- hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
+hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
+hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
 -- hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 
 -----------------------
