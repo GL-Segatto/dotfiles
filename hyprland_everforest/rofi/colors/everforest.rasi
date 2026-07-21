@@ -7,10 +7,78 @@
  **/
 
 * {
-    background:     #323D43FF;
-    background-alt: #3C474DFF;
-    foreground:     #DAD1BEFF;
-    selected:       #7FBBB3FF;
-    active:         #A7C080FF;
-    urgent:         #E67E80FF;
+    /* Background */
+    bg-dim:      #1E2326;
+
+    bg0:         #272E33;
+    bg1:         #2E383C;
+    bg2:         #374145;
+    bg3:         #414B50;
+    bg4:         #495156;
+    bg5:         #4F5B58;
+
+    /* Background variants */
+    bg-red:      #493B40;
+    bg-yellow:   #45443C;
+    bg-green:    #3C4841;
+    bg-blue:     #384B55;
+    bg-purple:   #463F48;
+    bg-visual:   #4C3743;
+
+    /* Foreground */
+    fg:          #D3C6AA;
+
+    /* Accent colors */
+    red:         #E67E80;
+    yellow:      #DBBC7F;
+    green:       #A7C080;
+    blue:        #7FBBB3;
+    purple:      #D699B6;
+    aqua:        #83C092;
+    orange:      #E69875;
+
+    /* Greys */
+    grey0:       #7A8478;
+    grey1:       #859289;
+    grey2:       #9DA9A0;
+
+    /* Statusline */
+    statusline1: #A7C080;
+    statusline2: #D3C6AA;
+    statusline3: #E67E80;
+
+    /* Alpha (70%) */
+    bg-dim-a:    rgba(30,35,38,70%);
+
+    bg0-a:       rgba(39,46,51,70%);
+    bg1-a:       rgba(46,56,60,70%);
+    bg2-a:       rgba(55,65,69,70%);
+    bg3-a:       rgba(65,75,80,70%);
+    bg4-a:       rgba(73,81,86,70%);
+    bg5-a:       rgba(79,91,88,70%);
+
+    bg-red-a:    rgba(73,59,64,70%);
+    bg-yellow-a: rgba(69,68,60,70%);
+    bg-green-a:  rgba(60,72,65,70%);
+    bg-blue-a:   rgba(56,75,85,70%);
+    bg-purple-a: rgba(70,63,72,70%);
+    bg-visual-a: rgba(76,55,67,70%);
+
+    fg-a:        rgba(211,198,170,70%);
+
+    red-a:       rgba(230,126,128,70%);
+    yellow-a:    rgba(219,188,127,70%);
+    green-a:     rgba(167,192,128,70%);
+    blue-a:      rgba(127,187,179,70%);
+    purple-a:    rgba(214,153,182,70%);
+    aqua-a:      rgba(131,192,146,70%);
+    orange-a:    rgba(230,152,117,70%);
+
+    grey0-a:     rgba(122,132,120,70%);
+    grey1-a:     rgba(133,146,137,70%);
+    grey2-a:     rgba(157,169,160,70%);
+
+    statusline1-a: rgba(167,192,128,70%);
+    statusline2-a: rgba(211,198,170,70%);
+    statusline3-a: rgba(230,126,128,70%);
 }
