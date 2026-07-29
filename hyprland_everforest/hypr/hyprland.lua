@@ -309,7 +309,7 @@ hl.config({
 
     follow_mouse = 1,
 
-    sensitivity = -0.5, -- -1.0 - 1.0, 0 means no modification.
+    sensitivity = -0.7, -- -1.0 - 1.0, 0 means no modification.
     accel_profile = flat,
 
     touchpad = {
@@ -356,7 +356,11 @@ hl.bind(mainMod .. " + T", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("~/.config/waybar/scripts/launch.sh"))
 
 -- Captura região, salva e copia para a área de transferência com o grimblast
--- hypr.bind("", "PRINT", "exec", "grimblast copysave area")
+-- Dependencias:
+-- sudo pacman -S grim
+-- sudo pacman -S slurp
+-- sudo pacman -S wl-clipboard
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd([[grim -g "$(slurp)" - | wl-copy]]))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "left" }))
@@ -446,6 +450,11 @@ hl.window_rule({
 
   no_focus = true,
 })
+
+-- Concertar a resolução de programas
+xwayland = {
+  force_zero_scaling = true,
+}
 
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
