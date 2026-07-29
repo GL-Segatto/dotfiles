@@ -122,7 +122,7 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("swaync")
   hl.exec_cmd("awww-daemon")
   -- Imagem configurada para o daemon
-  hl.exec_cmd("awww img ~/.config/awww-daemon/wallpapers/everforest.jpg")
+  hl.exec_cmd("sleep 1 && awww img ~/.config/awww-daemon/wallpapers/brote_pinheiro.jpg")
   -- Reiniciar portal para o RustDesk
   hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 end)
